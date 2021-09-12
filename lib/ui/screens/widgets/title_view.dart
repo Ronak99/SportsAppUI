@@ -14,12 +14,9 @@ class TitleView extends StatelessWidget {
         children: [
           RichText(
             text: TextSpan(
-              style: TextStyle(
-                color: themeDarkColor,
-                fontSize: 35,
-              ),
+              style: Theme.of(context).textTheme.headline1,
               children: [
-                TextSpan(text: "Select your\n", style: TextStyle()),
+                TextSpan(text: "Select your\n"),
                 TextSpan(
                   text: "Favourite sport",
                   style: TextStyle(
@@ -58,6 +55,7 @@ class SeeAllButton extends StatelessWidget {
         "See All",
         style: TextStyle(
           fontSize: 15,
+          letterSpacing: .5,
           color: Colors.white,
           fontWeight: FontWeight.w600,
         ),

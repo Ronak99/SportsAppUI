@@ -17,6 +17,7 @@ class SectionTitleView extends StatelessWidget {
             style: TextStyle(
               color: themeDarkColor,
               fontSize: 35,
+              letterSpacing: .5,
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -25,6 +26,7 @@ class SectionTitleView extends StatelessWidget {
             style: TextStyle(
               fontWeight: FontWeight.w800,
               fontSize: 15,
+              letterSpacing: .5,
             ),
           ),
         ],

@@ -70,13 +70,15 @@ class NewsItemCard extends StatelessWidget {
                           style: TextStyle(
                             color: Colors.grey,
                             fontWeight: FontWeight.w600,
-                            fontSize: 13,
+                            letterSpacing: .5,
+                            fontSize: 12,
                           ),
                         ),
                         Text(
                           sportNewsItem.series.seriesName,
                           style: TextStyle(
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: .5,
                             fontSize: 17,
                           ),
                         ),
@@ -171,6 +173,7 @@ class TeamScoreView extends StatelessWidget {
           team.teamName,
           style: TextStyle(
             fontSize: 13,
+            letterSpacing: .3,
             color: themeDarkColor,
             fontWeight: FontWeight.w600,
           ),
@@ -200,7 +203,7 @@ class TeamScoreView extends StatelessWidget {
                 team.score!,
                 style: TextStyle(
                   color: Colors.white,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w700,
                   fontSize: 13,
                 ),
               ),
@@ -240,7 +243,7 @@ class CallToActionView extends StatelessWidget {
     return Row(
       children: [
         Container(
-          height: 80,
+          height: 75,
           width: 100,
           child: Stack(
             children: [
@@ -250,7 +253,7 @@ class CallToActionView extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15),
                   child: Image.network(
                     latestNewsItem.videoThumbnail,
-                    width: 100,
+                    width: 90,
                   ),
                 ),
               ),
@@ -295,6 +298,8 @@ class CallToActionView extends StatelessWidget {
                     latestNewsItem.title,
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
+                      fontSize: 13,
+                      letterSpacing: .5,
                     ),
                   ),
                 ),
