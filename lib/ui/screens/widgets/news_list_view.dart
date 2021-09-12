@@ -5,6 +5,7 @@ import 'package:sport_ui/constants/numerics.dart';
 import 'package:sport_ui/constants/strings.dart';
 import 'package:sport_ui/data/sport_team_data.dart';
 import 'package:sport_ui/model/models.dart';
+import 'package:sport_ui/utils/date_time_formatter.dart';
 
 class NewsListView extends StatelessWidget {
   @override
@@ -135,7 +136,7 @@ class NewsItemCard extends StatelessWidget {
                 ],
               ),
               child: Text(
-                "5 mins ago",
+                DateTimeFormatter.getRelativeTime(sportNewsItem.timestamp),
                 style: TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.w600,
@@ -307,7 +308,7 @@ class CallToActionView extends StatelessWidget {
               Align(
                 alignment: Alignment.topRight,
                 child: Text(
-                  '3 mins',
+                  DateTimeFormatter.getRelativeTime(latestNewsItem.timestamp),
                   style: TextStyle(
                     color: Colors.grey,
                   ),
