@@ -46,14 +46,14 @@ class FDottedLine extends StatefulWidget {
   ///
   /// height. If there is only [height] and no [width], you will get a dotted line in the vertical direction
   /// If there are both [width] and [height], you will get a dotted border.
-  final double height;
+  final double? height;
 
   /// 宽。如果只有 [width]，而没有 [height]，将获得一个水平方向的虚线
   /// 如果同时有 [width] 和 [height]，将获得一个虚线边框。
   ///
   /// width. If there is only [width] and no [height], you will get a dotted line in the horizontal direction
   /// If there are both [width] and [height], you will get a dotted border.
-  final double width;
+  final double? width;
 
   /// 虚线的厚度
   ///
@@ -88,8 +88,8 @@ class FDottedLine extends StatefulWidget {
   FDottedLine({
     Key? key,
     this.color = Colors.black,
-    required this.height,
-    required this.width,
+    this.height,
+    this.width,
     this.dottedLength = 5.0,
     this.space = 3.0,
     this.strokeWidth = 1.0,
@@ -162,10 +162,10 @@ class _FDottedLineState extends State<FDottedLine> {
     });
   }
 
-  CustomPaint dashPath({required double width, required double height}) {
+  CustomPaint dashPath({double? width,  double? height}) {
     return CustomPaint(
-      size: Size(_isEmpty(width) ? widget.strokeWidth : width,
-          _isEmpty(height) ? widget.strokeWidth : height),
+      size: Size(_isEmpty(width) ? widget.strokeWidth : width!,
+          _isEmpty(height) ? widget.strokeWidth : height!),
       foregroundPainter: _DottedLinePainter()
         ..color = widget.color
         ..dottedLength = widget.dottedLength
