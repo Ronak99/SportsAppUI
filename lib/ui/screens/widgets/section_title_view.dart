@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sport_ui/constants/colors.dart';
-import 'package:sport_ui/constants/numerics.dart';
+import '../../../constants/colors.dart';
+import '../../../constants/numerics.dart';
 
 class SectionTitleView extends StatelessWidget {
   const SectionTitleView({Key? key}) : super(key: key);

@@ -1,6 +1,6 @@
-import 'package:sport_ui/model/latest_news_item.dart';
-import 'package:sport_ui/model/sport_series.dart';
-import 'package:sport_ui/model/sport_team.dart';
+import 'latest_news_item.dart';
+import 'sport_series.dart';
+import 'sport_team.dart';
 
 class SportNewsItem {
   SportTeam teamOne;

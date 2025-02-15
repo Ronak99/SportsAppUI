@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:sport_ui/ui/screens/widgets/title_view.dart';
-import 'package:sport_ui/ui/widgets/custom_app_bar.dart';
 
+import '../widgets/custom_app_bar.dart';
 import 'widgets/news_list_view.dart';
 import 'widgets/section_title_view.dart';
 import 'widgets/sport_list_view.dart';
+import 'widgets/title_view.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);

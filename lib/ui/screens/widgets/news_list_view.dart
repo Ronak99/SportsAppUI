@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
-import 'package:sport_ui/constants/colors.dart';
-import 'package:sport_ui/constants/numerics.dart';
-import 'package:sport_ui/data/app_data.dart';
-import 'package:sport_ui/model/latest_news_item.dart';
-import 'package:sport_ui/model/sport_news_item.dart';
-import 'package:sport_ui/model/sport_team.dart';
-import 'package:sport_ui/utils/date_time_formatter.dart';
+import '../../../constants/colors.dart';
+import '../../../constants/numerics.dart';
+
+import '../../../data/app_data.dart';
+import '../../../model/sport_news_item.dart';
+import '../../../model/sport_team.dart';
+import '../../../model/latest_news_item.dart';
+import '../../../utils/date_time_formatter.dart';
 
 class NewsListView extends StatelessWidget {
   const NewsListView({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class NewsListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: NewsData.sportNewsItemList
-          .map((e) => NewsItemCard(sportNewsItem: e))
+          .map((e) => NewsItemCard(sportNewsItem: e as SportNewsItem))
           .toList(),
     );
   }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:sport_ui/constants/colors.dart';
-import 'package:sport_ui/constants/numerics.dart';
-import 'package:sport_ui/ui/widgets/fdotted_line.dart';
+import '../../../constants/colors.dart';
+import '../../../constants/numerics.dart';
+import '../../../ui/widgets/fdotted_line.dart';
 
 class SportListView extends StatelessWidget {
   const SportListView({Key? key}) : super(key: key);

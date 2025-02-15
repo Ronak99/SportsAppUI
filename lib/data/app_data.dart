@@ -1,8 +1,8 @@
-import 'package:sport_ui/constants/strings.dart';
-import 'package:sport_ui/model/latest_news_item.dart';
-import 'package:sport_ui/model/sport_news_item.dart';
-import 'package:sport_ui/model/sport_series.dart';
-import 'package:sport_ui/model/sport_team.dart';
+import '../constants/strings.dart';
+import '../model/latest_news_item.dart';
+import '../model/sport_news_item.dart';
+import '../model/sport_series.dart';
+import '../model/sport_team.dart';
 
 class SportTeamData {
   static SportTeam teamIndia = SportTeam(
